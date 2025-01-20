@@ -1,0 +1,54 @@
+.logo {
+  background-image: url("../../../public/images/aRel.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 40vh; /* Adjust the width as needed */
+  height: 90%;
+
+  min-height: 10vh;
+  min-width: 17vh;
+
+  margin-left: 200px;
+}
+.logoContainer {
+  display: flex;
+
+  height: 150px;
+}
+.max {
+  max-height: 20vh;
+}
+.row1 {
+  margin-top: 10px;
+}
+.link {
+  position: relative;
+  transform: translateY(4vh);
+  margin-right: 2vh;
+  font-family: "Crimson Text";
+  font-size: 2vh;
+  font-style: normal;
+  font-weight: 400;
+}
+.link {
+  font-style: normal; /* Mặc định không in nghiêng */
+  cursor: pointer;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.link.men {
+  color: #0083ef; /* Màu xanh cho MEN */
+}
+
+.link.women {
+  color: #ee7dcb; /* Màu hồng cho WOMEN */
+}
+
+.link.kids {
+  color: rgb(166, 224, 107); /* Màu vàng chanh cho KIDS */
+}
+
+.link.beauty {
+  color: turquoise; /* Màu turquoise cho BEAUTY */
+}
