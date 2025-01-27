@@ -1,0 +1,109 @@
+.item {
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  height: 45vh; /* Chiều cao của toàn bộ container */
+  width: 100%;
+  border: 1.2px solid #424141;
+  display: flex;
+  flex-direction: column; /* Sắp xếp các phần tử con theo chiều dọc */
+}
+.item :hover {
+  cursor: pointer;
+}
+.item-image-con {
+  position: relative;
+  height: calc(
+    100% - 30px
+  ); /* Chiều cao là phần còn lại sau khi trừ 60px của .item-infor */
+}
+
+.item-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  transition: opacity 0.15s ease; /* Thêm hiệu ứng chuyển đổi mờ dần */
+}
+.item-image.img1 {
+  opacity: 1;
+}
+
+.item:hover .item-image.img1 {
+  opacity: 0; /* Ẩn đi từ từ khi hover vào .item */
+}
+
+.item-infor {
+  flex-grow: 0; /* Không mở rộng thêm */
+  height: 30px; /* Chiều cao cố định */
+  max-height: 30px;
+  border-top: 1.2px solid #424141;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  padding: 10px; /* Đã sửa lỗi sai trong giá trị padding */
+}
+.name {
+  margin-top: 25px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 0.35vh;
+}
+.origin-price {
+  font-family: "Roboto Mono", monospace;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.price_con {
+  display: flex;
+}
+.discount {
+  margin-left: 10px;
+  background-color: rgb(8, 255, 8);
+  padding: 0px 5px;
+}
+.sizes {
+  display: flex;
+  flex-wrap: nowrap; /* Ngăn chặn việc xuống dòng */
+  gap: 10px; /* Thêm khoảng cách giữa các size */
+}
+.r3 {
+  transform: translateY(-20px);
+  font-family: "Roboto Mono", monospace;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0; /* Mặc định ẩn */
+  visibility: hidden; /* Mặc định ẩn */
+  transition: opacity 0.3s ease, visibility 0.3s ease; /* Thêm hiệu ứng cho opacity và visibility */
+}
+
+.color {
+  display: flex;
+}
+.cldp {
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
+  border: 1px solid #424141;
+}
+.item:hover .price_con {
+  opacity: 0;
+  visibility: hidden; /* Ẩn đi */
+}
+
+.item:hover .r3 {
+  opacity: 1;
+  visibility: visible; /* Hiện ra từ từ */
+}

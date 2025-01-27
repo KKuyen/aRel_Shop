@@ -2,33 +2,35 @@
   background-image: url("../../../public/images/aRel.png");
   background-size: contain;
   background-repeat: no-repeat;
-  width: 40vh; /* Adjust the width as needed */
-  height: 90%;
+  width: 250px; /* Adjust the width as needed */
+  height: 130px; /* Adjust the height as needed */
 
-  min-height: 10vh;
-  min-width: 17vh;
+  margin-left: 10vh;
 
-  margin-left: 200px;
+  min-width: 295px;
+  min-height: 200px;
 }
 .logoContainer {
   display: flex;
 
-  height: 150px;
+  height: 140px;
 }
 .max {
-  max-height: 20vh;
 }
 .row1 {
   margin-top: 10px;
 }
+
 .link {
   position: relative;
-  transform: translateY(4vh);
-  margin-right: 2vh;
+  transform: translateY(25px);
+
   font-family: "Crimson Text";
-  font-size: 2vh;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
+  color: #424141;
+  height: fit-content;
 }
 .link {
   font-style: normal; /* Mặc định không in nghiêng */
@@ -46,9 +48,135 @@
 }
 
 .link.kids {
-  color: rgb(166, 224, 107); /* Màu vàng chanh cho KIDS */
+  color: turquoise; /* Màu turquoise cho BEAUTY */
 }
 
 .link.beauty {
-  color: turquoise; /* Màu turquoise cho BEAUTY */
+  color: rgb(150, 102, 253);
+}
+.row {
+  display: flex; /* Enables flexbox */
+  flex-wrap: nowrap; /* Ensures columns stay in one row */
+  align-items: center; /* Vertically aligns items */
+  justify-content: space-between; /* Adds spacing between columns */
+  width: 100%; /* Full width for row */
+}
+
+/* Style for individual columns */
+
+/* Ensure links have consistent appearance */
+.headerr-container {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  z-index: 1000;
+}
+.row2 {
+  margin-left: 0px !important;
+}
+
+.shortComponent {
+  display: flex;
+
+  margin-bottom: 25px;
+  margin-left: 4.5vh;
+
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.shortComponent.hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+.rightcol {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-right: 40px;
+  height: 140px;
+  margin-top: 10px;
+}
+.rightcolitem {
+  color: #424141;
+
+  font-family: "Roboto Mono", monospace;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  margin-left: 20px;
+}
+
+.view1,
+.view2,
+.view3 {
+  border: 2px solid #424141;
+}
+.view1 {
+  width: 15px;
+  height: 15px;
+}
+.view2 {
+  width: 6px;
+  height: 15px;
+  margin-left: 1.5px;
+}
+.view3 {
+  width: 5.25px;
+  height: 5.5px;
+  margin-right: 0.5px;
+  margin-bottom: 1px;
+}
+.view1.active,
+.view2.active,
+.view3.active {
+  background-color: #424141;
+}
+.view2-container {
+  display: flex;
+}
+.view3-container {
+  display: flex;
+  gap: 1px;
+}
+.vc {
+  margin-left: 15px;
+}
+.flex {
+  display: flex;
+
+  margin-left: 0px !important;
+
+  justify-content: space-between;
+
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  width: 100%; /* Đảm bảo chiếm toàn bộ chiều rộng */
+  margin: 0; /* Xóa margin thừa */
+  padding: 0; /* Xóa padding thừa */
+  position: relative; /* Đảm bảo không bị ảnh hưởng bởi các phần tử khác */
+  left: 0;
+}
+.flex.hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.flex2 {
+  display: flex;
+  margin-right: 40px;
+}
+.flex3 {
+  display: flex;
+}
+.headerr-container {
+  width: 100%; /* Đảm bảo chiếm toàn bộ chiều rộng */
+  margin: 0; /* Xóa margin thừa */
+  padding: 0; /* Xóa padding thừa */
+  margin-left: 0px !important;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
 }

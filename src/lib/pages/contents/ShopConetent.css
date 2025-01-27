@@ -1,0 +1,30 @@
+.shop-content {
+  display: flex;
+  position: relative; /* Đảm bảo .shop-content là phần tử tham chiếu */
+}
+
+.shop-display {
+  margin-left: 40vh;
+}
+.shop-content {
+  display: flex;
+  position: relative; /* Đảm bảo .shop-content là phần tử tham chiếu */
+}
+
+.shop-category {
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin-top: 227.5px;
+  height: calc(100vh - 227.5px); /* Chiều cao tối đa cho danh mục */
+  z-index: 1000;
+  overflow-y: auto; /* Kích hoạt cuộn theo chiều dọc */
+  scrollbar-width: none; /* Loại bỏ thanh cuộn mặc định trên Firefox */
+}
+
+.shop-category::-webkit-scrollbar {
+  display: none; /* Ẩn thanh cuộn trên Chrome, Edge, và Safari */
+}
+.parent-class {
+  overflow: visible;
+}

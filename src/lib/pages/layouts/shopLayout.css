@@ -1,0 +1,5 @@
+/* shopLayout.css */
+
+.content-container {
+  padding-top: 218.5px; /* Add padding to the top of the content to prevent it from hiding behind the fixed header */
+}
