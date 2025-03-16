@@ -1,0 +1,36 @@
+.detail {
+  margin-top: 180px;
+}
+
+.leftColumn {
+  margin-left: 2.1vh;
+  margin-right: 1vh;
+}
+
+.detailall {
+  min-height: 100vh; /* Đảm bảo toàn bộ trang có thể dài hơn màn hình */
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* Cho phép cuộn khi nội dung dài */
+}
+
+.detail {
+  display: flex;
+  flex: 1; /* Chiếm phần còn lại của màn hình */
+  height: 75vh; /* Chiếm 80% chiều cao màn hình */
+}
+
+.leftColumn {
+  flex: 19.8%;
+  overflow-y: auto; /* Cho phép cuộn nếu nội dung dài */
+}
+
+.main {
+  flex: 53.2%;
+  overflow-y: auto; /* Cho phép cuộn */
+}
+
+.right {
+  flex: 27%;
+  overflow-y: auto; /* Cho phép cuộn */
+}

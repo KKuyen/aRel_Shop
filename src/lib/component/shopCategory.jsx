@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./shopCategory.css";
 
 export default function ShopCategory() {
-  const tab = localStorage.getItem("page") || "DEFAULT"; // Đảm bảo có giá trị mặc định nếu không có trong localStorage
+  const tab = localStorage.getItem("page") || "MEN"; // Đảm bảo có giá trị mặc định nếu không có trong localStorage
   const color = (() => {
     switch (tab) {
       case "men":
@@ -52,11 +52,6 @@ export default function ShopCategory() {
 
   return (
     <div className="shop-category">
-      <div className="tab" style={{ color: color }}>
-        {tab.toUpperCase()}
-      </div>
-      <br />
-
       <div
         className={`cate ${
           selectedCategory === "CLOTHES(ALL)" ? "selected" : ""

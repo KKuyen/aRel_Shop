@@ -3,9 +3,9 @@
   grid-template-columns: repeat(4, 1fr); /* 4 cột */
   gap: 8px; /* Khoảng cách giữa các phần tử */
   padding: 16px; /* Khoảng cách bên trong */
-  width: calc(100vw - 43.5vh);
+  width: calc(100vw - 42.5vh);
   margin-right: 20px;
 }
 .display-contain {
-  margin-left: 36vh;
+  margin-left: 35vh;
 }

@@ -8,7 +8,7 @@ export default function ShopDisplay() {
   const [currentPage, setCurrentPage] = useState(1);
 
   const itemCards = Array.from({ length: totalItems }, (_, index) => (
-    <ItemCard key={index} />
+    <ItemCard key={index} height="42vh" />
   ));
 
   const startIndex = (currentPage - 1) * itemsPerPage;

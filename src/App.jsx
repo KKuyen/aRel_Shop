@@ -5,7 +5,8 @@ import React, { useState, useEffect } from "react";
 import ShopLayout from "./lib/pages/layouts/shopLayout";
 import ShopLayoutMobile from "./lib/pages/layouts/shopLayoutMobile";
 import { useLocation } from "react-router-dom";
-
+import ItemDetailLayout from "./lib/pages/layouts/itemDetailLayout";
+import ItemDetailMobileLayout from "./lib/pages/layouts/ItemDetailMobileLayout";
 function App() {
   const [isMobile, setIsMobile] = useState(
     window.innerWidth <= 700 || window.devicePixelRatio > 2.0
@@ -38,6 +39,10 @@ function App() {
             <ShopLayout setPage2={changePage2} />
           )
         }
+      />
+      <Route
+        path="/detail/*"
+        element={isMobile ? <ItemDetailMobileLayout /> : <ItemDetailLayout />}
       />
     </Routes>
   );

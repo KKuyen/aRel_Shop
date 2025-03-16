@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
 import Maniheader from "../../header/mainhear";
 import Mainheader2 from "../../header/mainhearder2";
-import ShopContent from "../contents/ShopContent";
+import ShopContent from "../contents/Shop/ShopContent";
 import Footer from "../../footer/footer";
-
+import ItemDetailLayout from "./itemDetailLayout";
 import "./shopLayout.css";
 const ShopLayout = ({ setPage2 }) => {
   const location = useLocation();

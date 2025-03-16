@@ -3,9 +3,6 @@
   position: relative; /* Đảm bảo .shop-content là phần tử tham chiếu */
 }
 
-.shop-display {
-  margin-left: 40vh;
-}
 .shop-content {
   display: flex;
   position: relative; /* Đảm bảo .shop-content là phần tử tham chiếu */

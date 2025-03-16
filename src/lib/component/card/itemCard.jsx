@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import "./itemCard.css";
 import "../../color.css";
 
-export default function ItemCard() {
+export default function ItemCard({ height }) {
+  const [id, setId] = useState(1);
   const [name, setName] = useState("ÁO ĐEN ÔM DÁNG NAM CỠ NHỎ");
   const [price, setPrice] = useState(10000);
   const [discount, setDiscount] = useState(0);
@@ -29,8 +30,12 @@ export default function ItemCard() {
   return (
     <div
       className="item"
+      style={{ cursor: "pointer", height: height }}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
+      onClick={() => {
+        window.location.href = `/detail?id=${id}`;
+      }}
     >
       <div className="item-image-con">
         <img className="item-image img2" src={image2} alt="Item"></img>

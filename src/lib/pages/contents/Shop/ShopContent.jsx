@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./ShopConetent.css";
-import ShopCategory from "../../component/shopCategory";
-import ShopDisplay from "../../component/shopDisplay";
+import ShopCategory from "../../../component/shopCategory";
+import ShopDisplay from "../../../component/shopDisplay";
 const ShopContent = ({ type }) => {
   return (
     <div className="shop-content">

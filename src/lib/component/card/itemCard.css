@@ -1,6 +1,6 @@
 .item {
   transition: opacity 0.3s ease, visibility 0.3s ease;
-  height: 45vh; /* Chiều cao của toàn bộ container */
+
   width: 100%;
   border: 1.2px solid #424141;
   display: flex;
@@ -33,6 +33,15 @@
 
 .item:hover .item-image.img1 {
   opacity: 0; /* Ẩn đi từ từ khi hover vào .item */
+}
+.item-image.img2 {
+  opacity: 0;
+
+  transition: opacity 0.1s ease !important; /* Thêm hiệu ứng chuyển đổi mờ dần */
+}
+
+.item:hover .item-image.img2 {
+  opacity: 1; /* Ẩn đi từ từ khi hover vào .item */
 }
 
 .item-infor {
